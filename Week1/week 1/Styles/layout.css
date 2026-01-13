@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+}
+
+header{
+    background: lightblue;
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightcyan;
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}

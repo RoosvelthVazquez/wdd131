@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Roosvelth Vazquez</title>
+    <meta name="author" content="Roosvelth Vazquez">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts.js/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Prueba</h1>
+    <header>
+        <p class="parrafo"></p>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <p class="parrafo"></p>
+        <div>
+            <ul class="tabnav">
+                <li><a target="_blank" href="https://www.linkedin.com/in/roosvelth-vazquez-6054512b0/">LinkedIn</a></li>
+                <li><a target="_blank" href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=spa&id=p23-p24#p23">Scripture</a></li>
+                <li><a target="_blank" href="">Final Project</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Roosvelth Vazquez</h1>
+        <section class="card" id="card1">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p class="parrafo" >My name is Roosvelth I am 24 years old. I wasborn in Veracruz, Mexico and I currently live with my family
+                    I work in a call center and study software developmet, this is something that I really
+                    enjoy. I like to play videogames and whatch gameplays on YouTube, when I have enough time
+                    I play Minecraft with my nephew and we spend really good time. </p>
+                <img class="photo1" src="images/foto1.jpg" alt="Roosvelth's picture">
+            </div>
+            
+            <h3>Veracruz, Mexico</h3>
+            <div class="state">
+                <figure>
+                    <img class="flag" src="images/bandera.jpg" alt="Mexico">
+                    <figcaption><em>Official flag of Mexico</em></figcaption>
+                </figure>
+                <p class="parrafo">Mexico offers amazing facts like having the world's largest pyramid (Cholula, hidden under a church), the most
+                    Spanish
+                    speakers globally, incredible biodiversity (most reptiles, second most mammals), and ancient history with cities
+                    like
+                    Tenochtitlán, now Mexico City, one of the oldest capitals in the Americas, all while boasting vibrant food and
+                    traditions.</p>
+            </div>
+        </section>
+        <section class="card" id="card2">
+            <h2>Web Dev Resources</h2>
+            <ul class="web-dev">
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Megazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="year">©<span id="currentyear"></span> 🍕 Roosvelth Arturo Vazquez Bautista 🍕 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenya</title>
+    <meta name="author" content="Roosvelth Vazquez">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts.js/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kenya</h1>
+    </header>
+    <div class="divider"></div>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cebraswebp2.webp" media="(min-width: 768px)">
+                <img src="images/cebrawebp.webp" alt="Lemurs in Madagascar">
+            </picture>
+
+            <div class="overlay">
+                <section class="data">
+                    <h2>Data</h2>
+                    <p><strong>Area:</strong> 580,367 sq km</p>
+                    <p><strong>Population:</strong> 54,985,698</p>
+                    <p><strong>Capital:</strong> Nairobi</p>
+                    <p><strong>Languages:</strong> Swahili, English</p>
+                    <p><strong>Currency:</strong> Kenyan Shilling (KES)</p>
+                    <p><strong>Time Zone:</strong> UTC+3</p>
+                    <p><strong>Calling Code:</strong> +254</p>
+                    <p><strong>Internet TLD:</strong> .ke</p>
+                </section>
+
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <p>Temperature: 10 °C</p>
+                    <p>Conditions: Partly Cloudy</p>
+                    <p>Wind: 5 km/h</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="year">©<span id="currentyear"></span> 🍕 Roosvelth Arturo Vazquez Bautista 🍕 Kenia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body> 
+
+</html>

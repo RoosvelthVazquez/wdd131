@@ -11,6 +11,7 @@ header{
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
+    color: #fff;
 }
 
 header, main{

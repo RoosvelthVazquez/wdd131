@@ -41,6 +41,11 @@ nav a {
     
 }
 
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 /* menu with button */
 #menu {
     font-size: 1.5rem;

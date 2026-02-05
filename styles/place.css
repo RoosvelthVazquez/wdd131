@@ -108,7 +108,12 @@ footer {
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
-    .weather h2::after {
-        content: "";
+    .weather h2 {
+        display: flex;
+        gap: 10px;
+    }
+
+    .weather h2 .icon {
+        width: 40px;
     }
 }

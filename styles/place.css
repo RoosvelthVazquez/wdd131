@@ -109,6 +109,6 @@ footer {
     }
 
     .weather h2::after {
-        content: " ⛅";
+        content: "";
     }
 }

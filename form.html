@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Roosvelth Vazquez">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+     rel="stylesheet">
+
+     <link rel="stylesheet" href="styles/form.css">
+     <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header><h1>Product Review</h1></header>
+
+    <body>
+        <form method="get" action="review.html">
+            <!-- Product name -->
+            <div class="product">
+                <label for="product">Name*</label>
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+            </div>
+
+            <!-- Overall Rating -->
+             <div>Overall Rating</div>
+            <div class="overall-rating">
+                <label for=""><input type="radio" id="star" name="star" required>☆</label>
+                <label for=""><input type="radio" id="star" name="star" required>☆☆</label>
+                <label for=""><input type="radio" id="star" name="star" required>☆☆☆</label>
+                <label for=""><input type="radio" id="star" name="star" required>☆☆☆☆</label>
+                <label for=""><input type="radio" id="star" name="star" required>☆☆☆☆☆</label>
+            </div>
+
+            <!-- Date of installation -->
+            <div>
+                <label for="">Date of installation <input type="date" id="date" name="date" required></label>
+            </div>
+            <!-- Useful Features -->
+             <div class="useful-features">
+                <p>Which features did you find useful in the product?</p>
+                <p class="cursive">(check all the apply)</p>
+                <label for="Durabillity"><input type="checkbox" id="Durabillity" name="Durabillity" value="Durabillity">Durabillity</label>
+                <label for="Ease of use"><input type="checkbox" id="Ease of use" name="Ease of use" value="">Ease of use</label>
+                <label for="Performance"><input type="checkbox" id="Performance" name="Performance" value="">Performance</label>
+                <label for="Dseing"><input type="checkbox" id="Dseing" name="Dseing" value="">Dseing</label>
+             </div>
+            <!-- Written Review -->
+             <div class="r-review">
+                <label for="r-review">Written Review</label>
+                <textarea name="r-review" id="r-review"></textarea>                
+             </div>
+
+             <!-- User's name -->
+             <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+             </div>
+
+        </form>
+        <div class="div">
+            <p><span class="contador">Number of visits:</span>
+            <span class="numVisits"></span></p>
+        </div>
+    </body>
+    <footer>
+        <p class="year">©<span id="currentyear"></span> 🍕 Roosvelth Arturo Vazquez Bautista 🍕 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

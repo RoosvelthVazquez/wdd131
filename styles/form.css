@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #28587B;
+    --secundary-color: #EEEEFF;
+    --third-color: #C5D8D1;
+    --forth-color: black;
+}
+
+body {
+    font-family: roboto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    text-align: center;
+    padding: 1px;
+}
+
+/* Form */
+form {
+    background-color: var(--third-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form .product #product {
+    display: block;
+    
+}
+form .overall-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form .overall-rating input {
+    display: block;
+    margin: 0 auto;
+
+}
+
+form #date,form .useful-features label,
+form .r-review #r-review,
+form .name input {
+    display: block;
+}
+
+form div {
+    width: 80%;
+    margin: 0 auto 15px auto;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+p {
+    margin: 0;
+}
+form .cursive {
+    font-style: italic;
+}
+
+.div {
+    background-color: var(--third-color);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    color: var(--secundary-color);
+}

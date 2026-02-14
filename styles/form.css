@@ -78,14 +78,23 @@ form .cursive {
     font-style: italic;
 }
 
+form input[type=submit ] {
+    display: block;
+    background-color: var(--secundary-color);
+    color: var(--forth-color);
+    border: none;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .div {
     background-color: var(--third-color);
     margin-bottom: 10px;
     padding: 10px;
 }
-
-
-
 
 footer {
     background-color: var(--primary-color);

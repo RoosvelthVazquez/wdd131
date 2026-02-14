@@ -18,7 +18,7 @@
 <body>
     <header><h1>Product Review</h1></header>
 
-    <body>
+    <main>
         <form method="get" action="review.html">
             <!-- Product name -->
             <div class="product">
@@ -29,27 +29,27 @@
             </div>
 
             <!-- Overall Rating -->
-             <div>Overall Rating</div>
+             <div>Overall Rating*</div>
             <div class="overall-rating">
-                <label for=""><input type="radio" id="star" name="star" required>☆</label>
-                <label for=""><input type="radio" id="star" name="star" required>☆☆</label>
-                <label for=""><input type="radio" id="star" name="star" required>☆☆☆</label>
-                <label for=""><input type="radio" id="star" name="star" required>☆☆☆☆</label>
-                <label for=""><input type="radio" id="star" name="star" required>☆☆☆☆☆</label>
+                <label for="star1"><input type="radio" id="star1" name="star" required>☆</label>
+                <label for="star2"><input type="radio" id="star2" name="star" required>☆☆</label>
+                <label for="star3"><input type="radio" id="star3" name="star" required>☆☆☆</label>
+                <label for="star4"><input type="radio" id="star4" name="star" required>☆☆☆☆</label>
+                <label for="star5"><input type="radio" id="star5" name="star" required>☆☆☆☆☆</label>
             </div>
 
             <!-- Date of installation -->
             <div>
-                <label for="">Date of installation <input type="date" id="date" name="date" required></label>
+                <label for="date">Date of installation*<input type="date" id="date" name="date" required></label>
             </div>
             <!-- Useful Features -->
              <div class="useful-features">
                 <p>Which features did you find useful in the product?</p>
                 <p class="cursive">(check all the apply)</p>
                 <label for="Durabillity"><input type="checkbox" id="Durabillity" name="Durabillity" value="Durabillity">Durabillity</label>
-                <label for="Ease of use"><input type="checkbox" id="Ease of use" name="Ease of use" value="">Ease of use</label>
+                <label for="Ease-of-use"><input type="checkbox" id="Ease-of-use" name="Ease-of-use" value="">Ease of use</label>
                 <label for="Performance"><input type="checkbox" id="Performance" name="Performance" value="">Performance</label>
-                <label for="Dseing"><input type="checkbox" id="Dseing" name="Dseing" value="">Dseing</label>
+                <label for="Dseing"><input type="checkbox" id="Dseing" name="Dseing" value="">Desing</label>
              </div>
             <!-- Written Review -->
              <div class="r-review">
@@ -63,12 +63,15 @@
                 <input type="text" id="name" name="name">
              </div>
 
+             <input class="butttom" type="submit" value="Send my product review">
+
         </form>
         <div class="div">
             <p><span class="contador">Number of visits:</span>
             <span class="numVisits"></span></p>
         </div>
-    </body>
+    </main>
+
     <footer>
         <p class="year">©<span id="currentyear"></span> 🍕 Roosvelth Arturo Vazquez Bautista 🍕 Mexico</p>
         <p id="lastModified"></p>

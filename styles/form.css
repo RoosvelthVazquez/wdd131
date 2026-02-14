@@ -7,9 +7,9 @@
 
 body {
     font-family: roboto;
-    width: 100%;
-    max-width: 400px;
-    min-width: 300px;
+    width: 400px;
+    /* max-width: 400px;
+    min-width: 300px; */
     margin: 0 auto;
 }
 
@@ -94,6 +94,7 @@ form input[type=submit ] {
     background-color: var(--third-color);
     margin-bottom: 10px;
     padding: 10px;
+    text-align: center;
 }
 
 footer {
@@ -101,4 +102,11 @@ footer {
     text-align: center;
     padding: 10px;
     color: var(--secundary-color);
+}
+
+@media (min-width: 900px) {
+    body {
+        width: 70%;
+        margin: 20px auto;
+    }
 }

@@ -75,7 +75,7 @@ const temples = [
     {
         templeName: "Toronto Ontario",
         location: "Toronto, Ontario",
-        dedicated: "1990, Agust.26",
+        dedicated: "1990, Agust, 26",
         area: 55558,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/toronto-ontario-temple/toronto-ontario-temple-57469-main.jpg"

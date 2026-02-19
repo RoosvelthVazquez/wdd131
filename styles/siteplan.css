@@ -4,6 +4,7 @@
     --third-color: #0E3E72;
     --fourth-color: #FEFEEB;
     --fifth-color: #253031;
+    --sixth-color: #000;
     
 }
 
@@ -11,12 +12,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: roboto;
+}
+
+body {
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 /* Navigation Mobil */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     display: grid;
     place-items: center;
     grid-gap: 1rem;
@@ -36,9 +41,10 @@ main {
 }
 
 .tittle {
-    font-family: anton;
+    font-family: 'anton', Arial, Helvetica, sans-serif;
     font-size: 3rem;
-    color: #fff;
+    color: var(--fourth-color);
+    background-color: var(--third-color);
 }
 
 nav ul {
@@ -50,7 +56,8 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color: var(--fourth-color);
+    background-color: var(--third-color);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -59,15 +66,15 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--fourth-color);
+    color: var(--sixth-color);
 }
 
 /* menu with button */
 #menu {
     font-size: 1.5rem;
     border: 0;
-    background: none;
+    background-color: var(--third-color);
     color: #000;
     position: absolute;
     top: 1rem;
@@ -94,14 +101,16 @@ nav a:hover {
 
 .hero {
     background-color: var(--fourth-color);
+    color: var(--sixth-color);
     text-align: center;
     padding: 3rem 1rem;
 }
 
 .hero h1 {
-    font-family: anton;
+    font-family: 'anton', Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     color: var(--third-color);
+    background-color: var(--fourth-color);
 }
 
 .hero p {
@@ -109,20 +118,24 @@ nav a:hover {
     max-width: 600px;
     font-size: 1.1rem;
     color: var(--fifth-color);
+    background-color: var(--fourth-color);
 }
 
 .cta {
-    background-color: var(--secundary-color);
-    color: #fff;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
     border: none;
     padding: 1rem 2rem;
     font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .cta:hover {
     background-color: var(--third-color);
+    color: var(--fourth-color);
 }
 
 /* GRID */
@@ -136,6 +149,7 @@ nav a:hover {
 
 .card {
     background-color: var(--fourth-color);
+    color: var(--sixth-color);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -144,31 +158,35 @@ nav a:hover {
 .card h2 {
     margin-bottom: 1rem;
     color: var(--third-color);
+    background-color: var(--fourth-color);
 }
 
 .card p {
     color: var(--fifth-color);
+    background-color: var(--fourth-color);
     line-height: 1.6;
 }
 
 /* TESTIMONIES  */
 
 .testimonials {
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     color: white;
     text-align: center;
     padding: 3rem 1rem;
 }
 
 .testimonials h2 {
-    font-family: anton;
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: var(--fourth-color);
+    background-color: var(--third-color);
 }
 
 .testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto 300px));
+    /* grid-template-columns: repeat(2, minmax(auto 300px)); */
     gap: 1.5rem;
 }
 
@@ -180,9 +198,10 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.testimonial-card h4 {
+.testimonial-card h3 {
     margin-top: 1rem;
     color: var(--third-color);
+    background-color: var(--fourth-color);
 }
 
  .testimonials img { /* nota: responsive img */
@@ -194,9 +213,9 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     text-align: center;
-    color: #fff;
+    color: var(--fourth-color);
     padding: 10px;
 }
 
@@ -232,7 +251,6 @@ footer {
     }
 
     .testimonial-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     }

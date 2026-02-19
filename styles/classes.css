@@ -4,6 +4,7 @@
     --third-color: #0E3E72;
     --fourth-color: #FEFEEB;
     --fifth-color: #253031;
+    --sixth-color: #000;
 
 }
 
@@ -11,17 +12,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: roboto;
+}
+
+body {
+    font-family: 'opensans', Arial, Helvetica, sans-serif;
 }
 
 /* Navigation Mobil */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     display: grid;
     place-items: center;
     grid-gap: 1rem;
     padding: 20px;
-    color: #fff;
+    color: var(--fourth-color);
 
     position: sticky;
     top: 0;
@@ -38,7 +42,8 @@ main {
 .tittle {
     font-family: anton;
     font-size: 3rem;
-    color: #fff;
+    color: var(--fourth-color);
+    background-color: var(--third-color);
 }
 
 nav ul {
@@ -50,7 +55,8 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color: var(--fourth-color);
+    background-color: var(--third-color);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -59,8 +65,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--fourth-color);
+    color: var(--sixth-color);
 }
 
 /* menu with button */
@@ -68,7 +74,7 @@ nav a:hover {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #000;
+    color: var(--sixth-color);
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -118,7 +124,7 @@ h2 {
 
 button {
     background: var(--secondary);
-    color: white;
+    color: var(--fourth-color);
     border: none;
     padding: .8rem 1.5rem;
     border-radius: 6px;
@@ -135,7 +141,11 @@ button:hover {
      border-radius: 12px;
      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
      max-width: 500px;
-     margin: 2rem auto;
+     margin: 0 auto;
+}
+
+section h2 {
+    margin-top: 2rem;
 }
 
  .form-group {
@@ -164,7 +174,7 @@ button:hover {
 
  input[type="submit"] {
      background: var(--third-color);
-     color: black;
+     color: var(--fourth-color);
      border: none;
      padding: 1rem;
      font-size: 1rem;
@@ -176,6 +186,7 @@ button:hover {
 
  input[type="submit"]:hover {
      background: var(--primary);
+     color: var(--sixth-color);
      transform: translateY(-2px);
      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
@@ -188,9 +199,9 @@ button:hover {
 
 /* FOOTER */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     text-align: center;
-    color: #fff;
+    color: var(--fourth-color);
     padding: 10px;
 }
 
@@ -233,12 +244,18 @@ footer {
 
     .instructores {
         background-color: var(--secundary-color);
+        color: var(--sixth-color);
         width: 70%;
         margin: 0 auto;
         padding: 10px;
         
     }
     
+    .instructores h2 {
+        font-size: 2rem;
+        color: var(--sixth-color);
+        background-color: var(--secundary-color);
+    }
 
     footer {
         display: grid;

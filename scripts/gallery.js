@@ -51,8 +51,6 @@ function restoreLastViewed() {
 
 document.addEventListener("DOMContentLoaded", () => {
     displayGallery();
-    document.querySelectorAll(".gallery-item").forEach(item => {
-        item.addEventListener("click", openModal);
-    });
+    document.querySelectorAll(".gallery-item").forEach(item => {    });
 });
 

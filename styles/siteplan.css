@@ -251,8 +251,14 @@ footer {
     }
 
     .testimonial-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .testimonial-grid img {
+        border-radius: 3%;
     }
 
     footer {

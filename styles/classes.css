@@ -111,17 +111,26 @@ h2 {
 }
 
 .card {
-    background: var(--light);
+    background: var(--primary-color);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.card img {
-    width: 150px;
+.card-inst {
+background: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
 }
 
+.card-inst img {
+    width: 150px;
+}
+h2
 button {
     background: var(--secondary);
     color: var(--fourth-color);
@@ -233,6 +242,13 @@ footer {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        color: var(--sixth-color);
+        background-color: var(--fourth-color);
+    }
+
+    .grid p{
+        text-align: start;
+        padding: 10px;
     }
 
     .grid2 {
@@ -253,7 +269,7 @@ footer {
     
     .instructores h2 {
         font-size: 2rem;
-        color: var(--sixth-color);
+        color: var(--fourth-color);
         background-color: var(--secundary-color);
     }
 

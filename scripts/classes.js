@@ -8,12 +8,10 @@ menuButton.addEventListener("click", () => {
 
 
 const packages = [
-    { name: "Basic Package", lessons: 5, price: 200 },
-    { name: "Standard Package", lessons: 10, price: 350 },
-    { name: "Premium Package", lessons: 15, price: 500 },
-    { name: "Teen Starter Package", lessons: 8, price: 280 },
-    { name: "Defensive Driving Course", lessons: 6, price: 220 },
-    { name: "Intensive Fast Track", lessons: 20, price: 750 }
+    { name: "Beginner Package – “Start Smart”", description: "New drivers with little or no experience.", lessons: 5, price: 200 },
+    { name: "Intermediate Package – “Confidence Builder”", description: "Students who already know the basics but need more practice.", lessons: 10, price: 350 },
+    { name: "Road Test Prep Package – “Pass First Time”", description: "Students preparing for their driving exam.", lessons: 15, price: 500 },
+    { name: "Defensive Driving Course – “Drive Safe, Stay Safe”", description:"Drivers who want to improve safety skills.", lessons: 8, price: 280 }
 
 ];
 
@@ -29,12 +27,13 @@ const packageSelect = document.querySelector("#packageSelect");
 const form = document.querySelector("#enrollForm");
 const message = document.querySelector("#message");
 
-/* Function 1: Display Packages */
+/* Function 1: Packages */
 function displayPackages() {
     packages.forEach(pkg => {
         packagesContainer.innerHTML += `
             <div class="card">
                 <h3>${pkg.name}</h3>
+                <p>Ideal for:  ${pkg.description}</p>
                 <p>Lessons: ${pkg.lessons}</p>
                 <p>Price: $${pkg.price}</p>
             </div>
@@ -43,11 +42,11 @@ function displayPackages() {
     });
 }
 
-/* Function 2: Display Instructors */
+/* Function 2: Instructors */
 function displayInstructors() {
     instructors.forEach(inst => {
         instructorsContainer.innerHTML += `
-            <div class="card">
+            <div class="card-inst">
                 <img src="${inst.image}" alt="${inst.name}" class="instructor-img">
                 <h3>${inst.name}</h3>
                 <p>Experience: ${inst.experience} years</p>
@@ -56,7 +55,7 @@ function displayInstructors() {
     });
 }
 
-/* Function 3: Handle Form */
+/* Function 3: Form */
 function handleForm(event) {
     event.preventDefault();
 
@@ -65,7 +64,7 @@ function handleForm(event) {
     const phone = document.querySelector("#phone").value.trim();
     const selectedPackage = packageSelect.value;
 
-    
+
     if (!name || !email || !phone || selectedPackage === "") {
         message.textContent = `Please complete all required fields.`;
         return;

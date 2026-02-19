@@ -8,11 +8,12 @@
     <meta name="author" content="Roosvelth Vazquez">
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals This iis my first
         time taking this course, this goin to to awesome">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital@0;1&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
+        
     <link rel="stylesheet" href="styles/gallery.css">
     <script src="scripts/gallery.js" defer></script>
 </head>
@@ -42,9 +43,11 @@
     </main>
     
     <!-- Modal -->
+    <div id="gallery-container"></div>
+    
     <div id="modal" class="modal">
-        <span id="closeModal">&times;</span>
-        <img src="images/" id="modalImage" class="modal-content" alt="modal">
+        <span id="closeModal" class="close">&times;</span>
+        <img id="modalImage" alt="">
         <p id="modalCaption"></p>
     </div>
 
